@@ -15,7 +15,7 @@ enroll:
 # Collections
 collections:
   posts:
-    title: Apa yang Tersedia di Blog Kami?
+    title: "Apa yang Tersedia di Blog Kami?"
     output: true
     shorty: "Silakan baca artikel bermanfaat yang ditulis oleh para guru kami."
   pages:
@@ -23,7 +23,7 @@ collections:
     output: true
     shorty: ""
   values:
-    title: Nilai-Nilai Pegangan Kami
+    title: "<strong>Nilai-Nilai</strong> Pegangan Kami"
     output: true
     shorty: "Di SDIT Cordova, kami senantiasa mengutamakan kualitas pengajaran dan pengasuhan para siswa."
   features:

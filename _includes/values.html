@@ -1,0 +1,34 @@
+    <!-- Services Section -->
+    <section id="services" class="services section lighter-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        {% assign val = site.collections | where: "label", "values" | first %}
+        <h2 class="duotone">{{ val.title }}</h2>
+        {% include separator-center.html %}
+        <p>{{ val.shorty}}</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 slider">
+          {% for value in site.values %}
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-image: url({{ value.bg_img }}); background-size: cover; background-position: center;">
+            <!--  <div class="icon">
+                <i class="bi bi-{{ value.icon }}"></i>
+              </div> -->
+              <div class="service-glimpse" style="background: {{ value.bg_col }};">
+              <a href="service-details.html" class="stretched-link">
+                <h3>{{ value.title }}</h3>
+              </a>
+              <p>{{ value.excerpt }}</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          {% endfor %}
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->

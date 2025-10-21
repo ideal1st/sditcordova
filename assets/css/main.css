@@ -14,9 +14,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Varela Round",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Ubuntu",  sans-serif;
+  --nav-font: "Varela Round",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -42,6 +42,11 @@
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.lighter-background {
+  --background-color: #ffffff;
+  --surface-color: #f9f9f9;
+}
 
 .light-background {
   --background-color: #f9f9f9;
@@ -99,17 +104,27 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.duotone strong {
+  font-weight: 800;
+  color: var(--accent-color);
+}
 /*---------------------/
 / Separator            /
 /---------------------*/
-.separator {
+.sep-container {
+  display: grid;
+  justify-content: center;
+  padding: 12px 0 36px 0;
+}
+
+.sep-items {
   height: 4px;
   width: 48px;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.separator .sep-dot-left {
+.sep-items .sep-dot-left {
   background-color: var(--default-color);
   opacity: 20%;
   border-radius: 12px;
@@ -117,18 +132,18 @@ h6 {
   float: left;
 }
 
-.separator .sep-empty {
+.sep-items .sep-empty {
   border-radius: 12px;
   width: 4px;
 }
 
-.separator .sep-line {
+.sep-items .sep-line {
   background-color: var(--vivid-color);
   border-radius: 12px;
   width: 32px;
 }
 
-.separator .sep-dot-right {
+.sep-items .sep-dot-right {
   background-color: var(--default-color);
   opacity: 20%;
   border-radius: 12px;
@@ -877,8 +892,8 @@ section,
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 800;
+  text-transform: capitalize;
   margin-bottom: 20px;
   padding-bottom: 0;
   position: relative;
@@ -961,7 +976,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--default-color), transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
@@ -969,7 +984,7 @@ section,
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: var(--default-color);
+  color: var(--contrast-color);
   font-weight: 600;
 }
 
@@ -1203,6 +1218,7 @@ section,
   background-color: var(--surface-color);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 6px;
   padding: 80px 20px;
   transition: border ease-in-out 0.3s;
   height: 100%;
@@ -1252,6 +1268,17 @@ section,
 .slick-prev:before, .slick-next:before {
   color: var(--accent-color);
 }
+
+.service-glimpse {
+  margin: 84px -21px -84px -21px;
+  padding: 12px;
+  border-radius: 0 0 6px 6px;
+}
+
+.service-glimpse h3, .service-glimpse p {
+  color: var(--background-color);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
