@@ -1,6 +1,7 @@
 title:              SDIT Cordova Samarinda
 email:              sditcordovasmr@gmail.com
 description:        "Sekolah Dasar Islam Terpadu pertama di Samarinda."
+keywords:           "sekolah islam, sdit, samarinda"
 author:             Humas SDIT Cordova
 baseurl:            "/"
 phone:              6281234432180
@@ -45,7 +46,7 @@ collections:
     title: Bergabunglah di Acara Kami
     output: true
     shorty: "Kami secara berkala mengadakan beragam acara untuk membangun kedekatan di antara para siswa serta orang tua dan wali murid."
-  gurus:
+  civitas:
     title: Para Guru Kami Tercinta
     output: true
     shorty: "Hanya para guru yang terpelajar, mandiri, dan Islami yang bekerja bersama kami."

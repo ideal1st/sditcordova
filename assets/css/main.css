@@ -299,6 +299,7 @@ h6 {
   color: var(--default-color);
   background: var(--vivid-color);
   font-size: 14px;
+  font-family: var(--nav-font);
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 50px;
@@ -1205,6 +1206,7 @@ section,
   padding: 80px 20px;
   transition: border ease-in-out 0.3s;
   height: 100%;
+  margin: 12px;
 }
 
 .services .service-item .icon {
@@ -1247,6 +1249,9 @@ section,
   color: var(--accent-color);
 }
 
+.slick-prev:before, .slick-next:before {
+  color: var(--accent-color);
+}
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
