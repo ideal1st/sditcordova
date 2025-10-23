@@ -13,13 +13,13 @@
 
         <div class="row gy-4 slider">
           {% for value in site.values %}
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative" style="background-image: url({{ value.bg_img }}); background-size: cover; background-position: center;">
             <!--  <div class="icon">
                 <i class="bi bi-{{ value.icon }}"></i>
               </div> -->
               <div class="service-glimpse" style="background: {{ value.bg_col }};">
-              <a href="service-details.html" class="stretched-link">
+              <a href="{{ value.url }}" class="stretched-link">
                 <h3>{{ value.title }}</h3>
               </a>
               <p>{{ value.excerpt }}</p>
