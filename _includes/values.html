@@ -19,7 +19,7 @@
                 <i class="bi bi-{{ value.icon }}"></i>
               </div> -->
               <div class="service-glimpse" style="background: {{ value.bg_col }};">
-              <a href="{{ value.url }}" class="stretched-link">
+              <a href="{{ value.url | relative_url }}" class="stretched-link">
                 <h3>{{ value.title }}</h3>
               </a>
               <p>{{ value.excerpt }}</p>
