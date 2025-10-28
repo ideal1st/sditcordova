@@ -7,10 +7,10 @@ baseurl:            ""
 phone:              6281234432180
 message:            "Assalamu 'alaykum, SDIT Cordova."
 enroll:
-  call: "Daftar Sekarang via"
-  contact: 085678876580
-  btn: "Kontak WA Admin"
-  url: "https://wa.me/6285678876580"
+  call:             "Daftar Sekarang via"
+  contact:          085678876580
+  btn:              "Kontak WA Admin"
+  url:              "https://wa.me/6285678876580"
 url:                "https://wip.ninjuku.studio"
 
 # Collections
@@ -28,7 +28,7 @@ collections:
     output: true
     shorty: "Di SDIT Cordova, kami senantiasa mengutamakan kualitas pengajaran dan pengasuhan para siswa."
   features:
-    title: Selamat Datang di SDIT Cordova
+    title: <strong>Selamat Datang</strong> di SDIT Cordova
     output: true
     shorty: "Anak-anak adalah manusia kecil yang siap mengeksplorasi dunia."
   programs:

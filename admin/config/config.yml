@@ -4,7 +4,7 @@ backend:
   branch: main
   base_url: https://api.netlify.com
 
-site_url: https://ideal1st.github.io/sditcordova
+site_url: https://wip.ninjuku.studio
 
 publish_mode: editorial_workflow
 media_folder: "assets/img"
