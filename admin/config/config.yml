@@ -2,7 +2,6 @@ backend:
   name: github
   repo: ideal1st/sditcordova
   branch: main
-  base_url: https://api.netlify.com
 
 site_url: https://wip.ninjuku.studio
 
