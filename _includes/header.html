@@ -2,7 +2,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="{{ 'index.html' | absolute_url }}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">SDIT Cordova Samarinda</h1>
@@ -10,11 +10,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#values">Tentang Kami</a></li>
-          <li><a href="#programs">Program</a></li>
-          <li><a href="#snapshots">Galeri</a></li>
-          <li><a href="#events">Acara</a></li>
+          <li><a href="{{ '#hero' | absolute_url }}" class="active">Beranda</a></li>
+          <li><a href="{{ '#values' | absolute_url }}">Tentang Kami</a></li>
+          <li><a href="{{ '#programs' | absolute_url }}">Program</a></li>
+          <li><a href="{{ '#snapshots' | absolute_url }}">Galeri</a></li>
+          <li><a href="{{ '#events' | absolute_url }}">Acara</a></li>
           <li class="dropdown"><a href="#"><span>Hubungi Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">PSB</a></li>
